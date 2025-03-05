@@ -10,31 +10,30 @@ The Library Management System is a Java-based application designed to efficientl
 
 ### User Authentication
 
-Supports different user roles (Librarian, Member).
+- Supports different user roles (Librarian, Member).
 
 ### Book Management
 
-Admins can add, remove, and view books.
+- Admins can add, remove, and view books.
 
 ### Borrow & Return System
 
-Members can borrow one book at a time and return it before borrowing another.
-
-Borrowed books are stored persistently using file handling.
+- Members can borrow one book at a time and return it before borrowing another.
+- Borrowed books are stored persistently using file handling.
 
 ### Data Persistence
 
-Borrowed books are saved and retrieved from text files (you can use JSON or SQL Database for advanced implementations).
+- Borrowed books are saved and retrieved from text files (you can use JSON or SQL Database for advanced implementations).
 
 ## :hammer_and_wrench: Technologies Used
 
 - Java - Core programming language
-- File Handling (TXT/JSON) - To store borrowed book records
+- File Handling (TXT) - To store borrowed book records
 - OOP Principles - Encapsulation, Inheritance, and Polymorphism
 
 ## :computer: How the Code Works
 
-To run the Library Management System, follow these steps:
+- To run the Library Management System, follow these steps:
 
 1. **Clone the repository**:
 
@@ -71,11 +70,10 @@ To run the Library Management System, follow these steps:
 
 ## :handshake: Contributing
 
-Feel free to contribute! Open an issue or submit a pull request if you find any bugs or have improvements.
+- Feel free to contribute! Open an issue or submit a pull request if you find any bugs or have improvements.
 
 ---
 
 ## :link: Connect with Me
 
-Have questions? Reach out via email or GitHub!
-b
+- Have questions? Reach out via [email](francismule300@gmail.com) or [Github](https://github.com/francismul)!
