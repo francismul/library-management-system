@@ -76,4 +76,4 @@ The Library Management System is a Java-based application designed to efficientl
 
 ## :link: Connect with Me
 
-- Have questions? Reach out via [email](francismule300@gmail.com) or [Github](https://github.com/francismul)!
+- Have questions? Reach out via [email](mailto:francismule300@gmail.com) or [Github](https://github.com/francismul)!
