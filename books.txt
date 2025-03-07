@@ -1,0 +1,10 @@
+The,The,The
+Great Gatsby,F. Scott Fitzgerald,Biography
+What is Mathematics?,Richard,Math
+Nineteen Eighty-Four,George Orwell,Fiction
+The Crash,Freida McFadden,Fiction
+The Hunger Games,Suzanne Collins,Fiction
+Pride and Prejudice,Jane Austen,Fiction
+Animal Farm,George Orwell,Fiction
+The Alchemist,Paulo Coelho,Fiction
+Fourth Wing,Rebecca Yarros,Fiction

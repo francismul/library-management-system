@@ -1,25 +1,18 @@
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-
 /**
- * Enum for Role
- */
-enum Role {
-    LIBRARIAN, MEMBER
-}
-
-/**
- * User Class
+ * User Base Class
  */
 public class User {
 
+    /**
+     * user class variables
+     */
     private final String username;
-    private String password;
+    private final String password;
     private final Role role;
 
     /**
-     * Class Constructor method
+     * class Constructor
      *
      * @param username
      * @param password
@@ -27,58 +20,38 @@ public class User {
      */
     public User(String username, String password, Role role) {
         this.username = username;
-        this.password = hashPassword(password);
+        this.password = password;
         this.role = role;
     }
 
+    
     /**
-     * Hash password function
-     *
-     * @return String
-     */
-    public final String hashPassword(String password) {
-        try {
-            MessageDigest digest = MessageDigest.getInstance("SHA-256");
-            byte[] hash = digest.digest(password.getBytes());
-            StringBuilder hexString = new StringBuilder();
-            for (byte b : hash) {
-                hexString.append(String.format("%02x", b));
-            }
-            return hexString.toString();
-        } catch (NoSuchAlgorithmException e) {
-            throw new RuntimeException("Error handling password", e);
-        }
-    }
-
-    /**
-     * get username
-     *
-     * @return String
+     * Get Username
      */
     public String getUsername() {
         return username;
     }
 
     /**
-     * get role method
+     * Get the role assigned to a certain user
      *
-     * @return String
+     * @return
      */
     public Role getRole() {
         return role;
     }
 
     /**
-     * get hashed password
+     * Get hashed password
      *
-     * @return String
+     * @return
      */
     public String getHashedPassword() {
         return password;
     }
 
     /**
-     * is_librarian method
+     * Method to help find if user is a librarian
      *
      * @return boolean
      */
