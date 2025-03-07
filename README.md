@@ -4,7 +4,7 @@
 
 ## :book: Project Overview
 
-The Library Management System is a Java-based application designed to efficiently manage book borrowing and returning within a library. This system ensures that library members can borrow and return books seamlessly while maintaining accurate records of available and borrowed books.
+The Library Management System is a Java-based application designed to efficiently manage Library books and also has the support for book borrowing and returning within a library. This system ensures that librarian's can add books to library and delete them from the library. The system also supports library members to borrow and return books seamlessly while maintaining accurate records of available and borrowed books.
 
 ## :rocket: Features
 
@@ -14,16 +14,16 @@ The Library Management System is a Java-based application designed to efficientl
 
 ### Book Management
 
-- Admins can add, remove, and view books.
+- Admins(Librarians) can add, remove, and view books.
 
 ### Borrow & Return System
 
-- Members can borrow one book at a time and return it before borrowing another.
+- Members can borrow books and return them back to the library.
 - Borrowed books are stored persistently using file handling.
 
 ### Data Persistence
 
-- Borrowed books are saved and retrieved from text files (you can use JSON or SQL Database for advanced implementations).
+- Borrowed books are saved and retrieved from text files (JSON or SQL Database can be used for advanced implementations).
 
 ## :hammer_and_wrench: Technologies Used
 
