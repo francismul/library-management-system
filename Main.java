@@ -295,7 +295,7 @@ public class Main {
                 String department = scanner.nextLine();
 
                 Book book = new Book(title, author, department);
-                System.out.println("Attempted to remove: " + book);
+                library.removeBookFromLibrary(book);
             }
             case 4 -> {
                 // library.displayAllBorrowedBooks(librarian);

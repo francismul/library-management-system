@@ -1,4 +1,3 @@
-The,The,The
 Great Gatsby,F. Scott Fitzgerald,Biography
 What is Mathematics?,Richard,Math
 Nineteen Eighty-Four,George Orwell,Fiction

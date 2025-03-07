@@ -44,6 +44,27 @@ public class Library {
         }
     }
 
+    public void removeBookFromLibrary(Book newBook) {
+        retrieveLibraryBooksFromFile("books.txt");
+
+        for (List<Book> books : booksByDepartment.values()) {
+            Iterator<Book> iterator = books.iterator();
+            while (iterator.hasNext()) {
+                Book book = iterator.next();
+
+                if (book.getTitle().equalsIgnoreCase(newBook.getTitle())
+                        && book.getAuthor().equalsIgnoreCase(newBook.getAuthor())) {
+                    iterator.remove();
+                    saveLibraryBooksToFile("books.txt");
+                    retrieveLibraryBooksFromFile("books.txt");
+                    System.out.println("You have successfully deleted the book: " + book);
+                    return;
+                }
+            }
+        }
+        System.out.println("Can't delete: " + newBook.getTitle() + " by " + newBook.getAuthor());
+    }
+
     public void borrowBook(Member member, String title, String author) {
         for (List<Book> books : booksByDepartment.values()) {
             Iterator<Book> iterator = books.iterator();
@@ -90,7 +111,7 @@ public class Library {
     }
 
     public void displayBorrowedBooks() {
-        
+
         System.out.println("Borrowed Books");
         for (Map.Entry<String, List<Book>> entry : borrowedBooksByMembers.entrySet()) {
             System.out.println("Member: " + entry.getKey());
